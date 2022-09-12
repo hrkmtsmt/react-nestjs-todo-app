@@ -1,0 +1,13 @@
+{
+  "name": "todo-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:hrkmtsmt/todo-app.git",
+  "author": "hrkmtsmt",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "front",
+    "api"
+  ]
+}
