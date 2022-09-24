@@ -1,6 +1,7 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { ConfigModule, ConfigService } from '@nestjs/config';
+import { Todo } from './todo/entities/todo.entity';
 
 @Module({
   imports: [
@@ -19,7 +20,7 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
           database: configService.get('POSTGRES_DB'),
           username: configService.get('POSTGRES_USER'),
           password: configService.get('POSTGRES_PASSWORD'),
-          entities: [],
+          entities: [Todo],
           synchronize: true,
         };
       },

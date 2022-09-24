@@ -16,7 +16,7 @@ export class Todo {
   @Column()
   body: string;
 
-  @Column()
+  @Column('bool')
   isCompleted: boolean;
 
   @CreateDateColumn()
