@@ -28,6 +28,7 @@
   },
   "main": "index.js",
   "license": "MIT",
+  "proxy": "http://localhost:3000",
   "dependencies": {
     "@nextui-org/react": "^1.0.0-beta.9",
     "@types/jest": "^27.0.1",
